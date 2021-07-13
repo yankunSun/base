@@ -19,6 +19,12 @@
     </properties>
 
     <dependencies>
+        <!--实现对Shiro的自动化配置-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring-boot-starter</artifactId>
+            <version>1.4.2</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
