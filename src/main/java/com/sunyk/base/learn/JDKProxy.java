@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-//jdk动态代理实现逻辑，需要实现InvocationHandler。目标类如果实现了接口，采用jdk动态代理，也可以采用cjlib代理，代理的目标对象是实现了接口的实现类targetObject；
+//jdk动态代理实现逻辑，需要实现InvocationHandler。目标类如果实现了接口，采用jdk动态代理，也可以采用cglib代理，代理的目标对象是实现了接口的实现类targetObject；
 public class JDKProxy implements InvocationHandler {
 
     private Object targetObject;//需要代理的目标对象
@@ -29,6 +29,7 @@ public class JDKProxy implements InvocationHandler {
 
     public static void main(String[] args) {
         JDKProxy jdkProxy = new JDKProxy();
+
         //获取代理对象
         UserManager userManager = (UserManager) jdkProxy.getProxyTargetObject(new UserManagerImpl());
 //        执行代理对象方法
