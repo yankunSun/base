@@ -14,7 +14,7 @@ public class DoubleThreadPoolDemo {
             MyTask myTask = new MyTask(i);
             executorService.execute(myTask);
             System.out.println("线程池中线程数目："+executorService.getPoolSize()+"，队列中等待执行的任务数目："+
-                    executorService.getQueue().size()+"，已执行玩别的任务数目："+executorService.getCompletedTaskCount());
+                    executorService.getQueue().size()+"，已执行完成的任务数目："+executorService.getCompletedTaskCount());
         }
         executorService.shutdown();
     }
