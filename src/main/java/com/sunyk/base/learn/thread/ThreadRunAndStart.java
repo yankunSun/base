@@ -1,4 +1,4 @@
-package com.sunyk.base.learn;
+package com.sunyk.base.learn.thread;
 
 public class ThreadRunAndStart {
     public static void main(String[] args) {

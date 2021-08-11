@@ -1,4 +1,4 @@
-package com.sunyk.base.learn;
+package com.sunyk.base.learn.proxy;
 
 import com.sunyk.base.service.UserManager;
 import com.sunyk.base.service.ipml.UserManagerImpl;

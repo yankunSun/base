@@ -1,4 +1,4 @@
-package com.sunyk.base.learn;
+package com.sunyk.base.learn.lock;
 
 
 import com.sunyk.base.domain.ThreadDemo;
